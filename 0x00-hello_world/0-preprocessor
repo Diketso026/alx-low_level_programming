@@ -1,2 +1,2 @@
 #!/bin/bash
-int main() {printf("Hello, World!");return 0;}
+main.c

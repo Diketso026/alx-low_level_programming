@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-/* header comes here */
+/* more headers goes there */
 
 /**
  * main - Entry point

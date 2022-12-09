@@ -1,11 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
+/* header comes here */
 
 /**
+ * main - Entry point
+ *
  * Finds if a random number is positive
  * or negative or zero
+ *
  * Return: Always 0 (Success)
  */
 

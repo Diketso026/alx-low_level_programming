@@ -13,19 +13,20 @@
 
 int main(void)
 {
-	int ascii = 48;
-
-	int i;
-
-	for (i = 0; i < 16 ; i++)
-	{
-		if (i == 10)
-		{
-			ascii = 87;
-		}
-		putchar(ascii + i);
-	}
-	putchar('\n');
-
-	return (0);
+char c = 'a';
+int num = 0;
+for (num = 0; num < 16; num++)
+{
+if (num < 10)
+{
+putchar(num + '0');
+}
+else
+{
+putchar(c);
+c++;
+}
+}
+putchar('\n');
+return (0);
 }

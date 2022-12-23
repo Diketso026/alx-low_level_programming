@@ -1,20 +1,29 @@
 #include "main.h"
 
 /**
- * _memset - char
- * @s: pointer to char params
- * @b: data to change
- * @n: index
- * Return: *s
+ * _strcat - function that concatenates two strings.
+ * @src: cadena a copiar
+ * @dest: destino de la cadena.
+ * Return: dest.
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strcat(char *dest, char *src)
 {
-	unsigned int i;
+	int i;
+	int j;
 
-	for (i = 0; i < n; i++)
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		s[i] = b;
+		i++;
 	}
-	return (s);
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }

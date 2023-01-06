@@ -12,8 +12,9 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt -square root recursion
+ * _sqrt - square root recursion
  * integer paramtr
+ * @n: integer parameter
  * @i: integer parameter
  * Return: sqrt
  */

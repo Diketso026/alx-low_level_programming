@@ -1,13 +1,20 @@
-#ifndef _HEADER_
-#define _HEADER_
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
- * struct dog - a dog's basic info
- * @name: First member
- * @age: Second member
- * @owner: Third member
+ * dog_t - Typedef for struct dog
+ */
+
+typedef struct dog dog_t;
+
+/**
+ * struct dog - struct that stores some information of a dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  *
- * Description: Longer description
+ * Description: struct called "dog" that store info on dog
+ * and the name of its owner.
  */
 
 struct dog
@@ -16,12 +23,6 @@ struct dog
 	float age;
 	char *owner;
 };
-
-/**
- * dog_t - typedef for struct dog
- */
-
-typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
